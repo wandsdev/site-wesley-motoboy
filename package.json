@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run tailwind:css && vite build",
-    "preview": "vite preview",
-    "tailwind:css": "postcss ./src/tailwind.css -o ./public/styles.css"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
