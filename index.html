@@ -1,298 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="./src/css/tailwind.css" /> -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="./src/css/tailwind.css" /> -->
 
-    <title>Vite App</title>
-    <!-- <script src="./src/js/main.js"></script> -->
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-  <body>
-    <div id="app" class="">
-      <!-- header -->
-      <header
-        style="scroll-margin-top: 1em"
-        class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[540px] w-screen"
-      >
-        <nav
-          class="w-full sm:px-10 py-6 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 md:px-20 md:flex md:justify-between md:items-center"
-        >
-          <div class="flex justify-between items-center">
-            <span class="text-cyan-900 font-bold text-2xl tracking-widest"
-              >Wesley Motoboy</span
-            >
+  <title>Vite App</title>
+  <!-- <script src="./src/js/main.js"></script> -->
+</head>
 
-            <span class="text-3xl text-cyan-900 cursor-pointer md:hidden block">
-              <ion-icon name="menu" onclick="handleMenuClick(this)"></ion-icon>
-            </span>
+<body>
+  <div id="#" class="">
+    <!-- header -->
+    <header style="scroll-margin-top: 1em" class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[540px] w-screen">
+      <nav
+        class="w-full sm:px-10 py-6 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 md:px-20 md:flex md:justify-between md:items-center">
+        <div class="flex justify-between items-center">
+          <span class="text-cyan-900 font-bold text-2xl tracking-widest">Wesley Motoboy</span>
 
-            <ul
-              class="w-full absolute -left-0 pl-12 bg-white md:z-auto md:w-auto md:flex md:items-center md:gap-8 md:static md:opacity-100 md:mr-8 opacity-0 top-[-400px] transition-all ease-in-out duration-500"
-            >
-              <li class="my-6 md:my-0">
-                <a
-                  class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
-                  href="#app"
-                  >Home</a
-                >
-              </li>
-              <li class="my-6 md:my-0">
-                <a
-                  class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
-                  href="#services"
-                  >Serviços</a
-                >
-              </li>
-              <li class="my-6 md:my-0">
-                <a
-                  class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
-                  href="#contact"
-                  >Contato</a
-                >
-              </li>
-            </ul>
-          </div>
+          <span class="text-3xl text-cyan-900 cursor-pointer md:hidden block">
+            <ion-icon name="menu" onclick="handleMenuClick(this)"></ion-icon>
+          </span>
 
-          <div class="flex sm:my-2 md:justify-between gap-2 items-center">
-            <ion-icon
-              class="text-3xl text-cyan-900"
-              name="logo-whatsapp"
-            ></ion-icon>
-            <span class="text-md text-cyan-900 font-semibold"
-              >(31) 99632-9659</span
-            >
-          </div>
-        </nav>
+          <ul
+            class="w-full absolute -left-0 pl-12 bg-white md:z-auto md:w-auto md:flex md:items-center md:gap-8 md:static md:opacity-100 md:mr-8 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
+            <li class="my-6 md:my-0">
+              <a class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
+                href="#">Home</a>
+            </li>
+            <li class="my-6 md:my-0">
+              <a class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
+                href="#sobre">Sobre</a>
+            </li>
+            <li class="my-6 md:my-0">
+              <a class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
+                href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
 
-        <div
-          class="sm:px-12 md:px-28 mt-[80px] flex sm:flex-col sm:justify-center sm:pt-16 md:pt-24 md:flex-row"
-        >
-          <div class="md:w-3/5 sm:text-center md:text-left">
-            <h1 class="text-5xl text-slate-100 mb-12">
-              Serviço de Entrega Express
-            </h1>
-            <p class="text-lg text-slate-100">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              quidem voluptatibus odit officia autem accusantium quis? Beatae
-              veritatis aut enim. Quo necessitatibus laudantium eveniet
-              veritatis, voluptatum est alias fugiat nesciunt!
-            </p>
-            <a
-              href="#services"
-              class="w-36 h-12 mt-12 tracking-widest font-semibold rounded-md text-slate-100 border-2 border-slate-100 hover:bg-slate-100 hover:text-cyan-800 sm:mb-16"
-            >
+        <div class="flex sm:my-2 md:justify-between gap-2 items-center">
+          <ion-icon class="text-3xl text-cyan-900" name="logo-whatsapp"></ion-icon>
+          <span class="text-md text-cyan-900 font-semibold">(31) 97533 0947</span>
+        </div>
+      </nav>
+
+      <div class="sm:px-12 md:px-28 mt-[80px] flex sm:flex-col sm:justify-center sm:pt-16 md:pt-24 md:flex-row">
+        <div class="md:w-3/5 sm:text-center md:text-left">
+          <h1 class="text-5xl text-slate-100 mb-12">
+            Serviço de Entrega Express
+          </h1>
+          <p class="text-lg text-slate-100">
+            Entregas com agilidade, compromisso e garantia. 100% confiável e a melhor prestação de serviço com preços
+            espetaculares.
+          </p>
+          <a href="#sobre">
+            <button href="#sobre"
+              class="w-36 h-12 mt-12 tracking-widest font-semibold rounded-md text-slate-100 border-2 border-slate-100 hover:bg-slate-100 hover:text-cyan-800 sm:mb-16">
               Começar
-            </a>
-          </div>
-          <div class="md:w-2/5 flex justify-center items-center">
-            <img
-              id="motoboyImg"
-              width="30%"
-              class="sm:hidden md:block md:absolute right-[-600px] opacity-0 transition-all ease-in duration-500"
-              src="./img/motoboy2.png"
-              alt="motoboy"
-            />
-          </div>
-        </div>
-      </header>
-
-      <section id="services" class="bg-white sm:px-12 md:px-28 py-8">
-        <h2
-          class="text-center text-4xl mb-4 font-semibold text-cyan-900 tracking-widest"
-        >
-          Serviços
-        </h2>
-
-        <div class="flex sm:flex-wrap md:flex-nowrap gap-8 py-12">
-          <div class="flex flex-col gap-6 items-center">
-            <span class="bg-cyan-500 p-8 rounded-full text-white">
-              <ion-icon
-                class="text-6xl text-center"
-                name="folder"
-                onclick="handleMenuClick(this)"
-              ></ion-icon>
-            </span>
-            <h3 class="text-3xl font-semibold tracking-widest">Title</h3>
-            <p class="text-center text-lg text-gray-500 leading-7">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              minima itaque odit. Sint, dolore placeat itaque nesciunt eius
-              quidem ab similique eveniet.
-            </p>
-          </div>
-          <div class="flex flex-col gap-6 items-center">
-            <span class="bg-cyan-500 p-8 rounded-full text-white">
-              <ion-icon
-                class="text-6xl text-center"
-                name="flash"
-                onclick="handleMenuClick(this)"
-              ></ion-icon>
-            </span>
-            <h3 class="text-3xl font-semibold tracking-widest">Title</h3>
-            <p class="text-center text-lg text-gray-500 leading-7">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              minima itaque odit. Sint, dolore placeat itaque nesciunt eius
-              quidem ab similique eveniet.
-            </p>
-          </div>
-          <div class="flex flex-col gap-6 items-center">
-            <span class="bg-cyan-500 p-8 rounded-full text-white">
-              <ion-icon
-                class="text-6xl text-center"
-                name="wallet-outline"
-                onclick="handleMenuClick(this)"
-              ></ion-icon>
-            </span>
-            <h3 class="text-3xl font-semibold tracking-widest">Title</h3>
-            <p class="text-center text-lg text-gray-500 leading-7">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              minima itaque odit. Sint, dolore placeat itaque nesciunt eius
-              quidem ab similique eveniet.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="contact"
-        class="bg-gradient-to-r from-cyan-600 to-cyan-500 w-screen sm:px-12 md:px-28 py-8"
-      >
-        <h2
-          class="text-center text-4xl mb-12 font-semibold text-slate-50 tracking-widest"
-        >
-          Contato
-        </h2>
-        <div class="sm:flex-col lg:flex lg:flex-row gap-12">
-          <form action="/" method="get" class="lg:w-1/2">
-            <label for="name" class="block text-slate-50 text-xl mb-1"
-              >Nome</label
-            >
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="w-full h-10 rounded-md px-4 outline-none mb-4"
-            />
-
-            <label for="email" class="block text-slate-50 text-xl mb-1"
-              >Email</label
-            >
-            <input
-              type="text"
-              email="name"
-              id="email"
-              class="w-full h-10 rounded-md px-4 outline-none mb-4"
-            />
-
-            <label for="msg" class="block text-slate-50 text-xl mb-1"
-              >Nome</label
-            >
-            <textarea
-              rows="6"
-              name="name"
-              id="name"
-              class="w-full rounded-md p-4 outline-none mb-4"
-            ></textarea>
-
-            <button
-              type="submit"
-              class="p-4 bg-slate-100 text-cyan-900 text-xl border-2 border-slate-400 font-medium rounded-md w-full mt-4 hover:bg-slate-200"
-            >
-              Enviar
             </button>
-          </form>
-
-          <hr class="sm:mt-12 sm:mb-4 lg:hidden" />
-
-          <div class="lg:w-1/2 p-6">
-            <address class="flex-col">
-              <div class="flex items-center gap-4 mb-6">
-                <ion-icon
-                  class="text-4xl text-slate-50 text-center"
-                  name="location"
-                ></ion-icon>
-                <span class="text-slate-50 font-semibold tracking-wider"
-                  >Rua Padre Miguel 589, bairro Anchieta, Belo Horizonte</span
-                >
-              </div>
-              <div class="flex items-center gap-4 mb-6">
-                <ion-icon
-                  class="text-4xl text-slate-50 text-center"
-                  name="mail"
-                ></ion-icon>
-                <span class="text-slate-50 font-semibold tracking-wider"
-                  >wesleymotoboi@gmail.com</span
-                >
-              </div>
-              <div class="flex items-center gap-4">
-                <ion-icon
-                  class="text-4xl text-slate-50 text-center"
-                  name="logo-whatsapp"
-                ></ion-icon>
-                <span class="text-slate-50 font-semibold tracking-wider"
-                  >(31) 99632-9659</span
-                >
-              </div>
-            </address>
-
-            <address class="mt-12">
-              <ion-icon
-                class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-                name="logo-facebook"
-              ></ion-icon>
-              <ion-icon
-                class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-                name="logo-instagram"
-              ></ion-icon>
-              <ion-icon
-                class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-                name="logo-twitter"
-              ></ion-icon>
-            </address>
-          </div>
+          </a>
         </div>
-      </section>
+        <div class="md:w-2/5 flex justify-center items-center">
+          <img id="motoboyImg" width="30%"
+            class="sm:hidden md:block md:absolute right-[-600px] opacity-0 transition-all ease-in duration-500"
+            src="./img/motoboy2.png" alt="motoboy" />
+        </div>
+      </div>
+    </header>
 
-      <footer class="bg-teal-800 w-screen h-48"></footer>
-    </div>
-    <script>
-      const motoboyImg = document.querySelector("#motoboyImg");
+    <section id="sobre" class="bg-white sm:px-12 md:px-28 py-8">
+      <h2 class="text-center text-4xl mb-4 font-semibold text-cyan-900 tracking-widest">
+        Sobre
+      </h2>
 
-      window.addEventListener("load", function () {
-        motoboyImg.classList.add("right-[70px]");
-        motoboyImg.classList.remove("opacity-0");
-      });
+      <div class="flex sm:flex-wrap md:flex-nowrap gap-8 py-12">
+        <div class="flex flex-col gap-6 items-center">
+          <span class="bg-cyan-500 p-8 rounded-full text-white">
+            <ion-icon class="text-6xl text-center" name="flash" onclick="handleMenuClick(this)"></ion-icon>
+          </span>
+          <h3 class="text-3xl font-semibold tracking-widest">Entregas</h3>
+          <p class="text-center text-lg text-gray-500 leading-7">
+            Entregas com agilidade, compromisso e garantia. 100% confiável e a melhor prestação de serviço com preços
+            espetaculares.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 items-center">
+          <span class="bg-cyan-500 p-8 rounded-full text-white">
+            <ion-icon class="text-6xl text-center" name="cash-outline" onclick="handleMenuClick(this)"></ion-icon>
+          </span>
+          <h3 class="text-3xl font-semibold tracking-widest">Preços</h3>
+          <p class="text-center text-lg text-gray-500 leading-7">
+            Temos uma tabela de preços acessível para economizar suas entregas. Clientes fixos tem condições especiais.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 items-center">
+          <span class="bg-cyan-500 p-8 rounded-full text-white">
+            <ion-icon class="text-6xl text-center" name="people-outline" onclick="handleMenuClick(this)"></ion-icon>
+          </span>
+          <h3 class="text-3xl font-semibold tracking-widest">Clientes</h3>
+          <p class="text-center text-lg text-gray-500 leading-7">
+            Temos preços diferenciados para nossos clientes fixo e com contratos. Uma das vantagens é a cortesia de não
+            pagar taxas de deslocamento e retorno.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      function handleMenuClick(e) {
-        let menu = document.querySelector("ul");
+    <section id="contato" class="bg-gradient-to-r from-cyan-600 to-cyan-500 w-screen sm:px-12 md:px-28 py-8">
+      <h2 class="text-center text-4xl mb-12 font-semibold text-slate-50 tracking-widest">
+        Contato
+      </h2>
+      <div class="sm:flex-col lg:flex lg:flex-row gap-12">
+        <form action="/" method="get" class="lg:w-1/2">
+          <label for="name" class="block text-slate-50 text-xl mb-1">Nome</label>
+          <input type="text" name="name" id="name" class="w-full h-10 rounded-md px-4 outline-none mb-4" />
 
-        if (e.name === "menu") {
-          e.name = "close";
-          menu.classList.add("top-[100px]");
-          menu.classList.add("opacity-100");
-        } else {
-          e.name = "menu";
-          menu.classList.remove("top-[80px]");
-          menu.classList.remove("opacity-100");
-        }
+          <label for="email" class="block text-slate-50 text-xl mb-1">Email</label>
+          <input type="text" email="name" id="email" class="w-full h-10 rounded-md px-4 outline-none mb-4" />
+
+          <label for="msg" class="block text-slate-50 text-xl mb-1">Nome</label>
+          <textarea rows="6" name="name" id="name" class="w-full rounded-md p-4 outline-none mb-4"></textarea>
+
+          <button type="submit"
+            class="p-4 bg-slate-100 text-cyan-900 text-xl border-2 border-slate-400 font-medium rounded-md w-full mt-4 hover:bg-slate-200">
+            Enviar
+          </button>
+        </form>
+
+        <hr class="sm:mt-12 sm:mb-4 lg:hidden" />
+
+        <div class="lg:w-1/2 p-6">
+          <address class="flex-col">
+            <div class="flex items-center gap-4 mb-6">
+              <ion-icon class="text-4xl text-slate-50 text-center" name="location"></ion-icon>
+              <span class="text-slate-50 font-semibold tracking-wider">Rua Padre Miguel 589, bairro Anchieta, Belo
+                Horizonte</span>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+              <ion-icon class="text-4xl text-slate-50 text-center" name="mail"></ion-icon>
+              <span class="text-slate-50 font-semibold tracking-wider">wesleyxaviermotoboy@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <ion-icon class="text-4xl text-slate-50 text-center" name="logo-whatsapp"></ion-icon>
+              <span class="text-slate-50 font-semibold tracking-wider">(31) 97533 0947</span>
+            </div>
+          </address>
+
+          <address class="mt-12">
+            <!-- <ion-icon class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
+              name="logo-facebook"></ion-icon> -->
+            <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
+              <ion-icon class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
+                name="logo-instagram"></ion-icon>
+            </a>
+            <!-- <ion-icon class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
+              name="logo-twitter"></ion-icon> -->
+          </address>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-teal-800 w-screen h-48"></footer>
+  </div>
+  <script>
+    const motoboyImg = document.querySelector("#motoboyImg");
+
+    window.addEventListener("load", function () {
+      motoboyImg.classList.add("right-[70px]");
+      motoboyImg.classList.remove("opacity-0");
+    });
+
+    function handleMenuClick(e) {
+      let menu = document.querySelector("ul");
+
+      if (e.name === "menu") {
+        e.name = "close";
+        menu.classList.add("top-[100px]");
+        menu.classList.add("opacity-100");
+      } else {
+        e.name = "menu";
+        menu.classList.remove("top-[80px]");
+        menu.classList.remove("opacity-100");
       }
-    </script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
