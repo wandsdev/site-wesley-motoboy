@@ -1,0 +1,22 @@
+{
+  "name": "site-wesley-motoboy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "npx tailwindcss -i ./tailwind/app.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandsdev/site-wesley-motoboy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wandsdev/site-wesley-motoboy/issues"
+  },
+  "homepage": "https://github.com/wandsdev/site-wesley-motoboy#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
