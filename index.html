@@ -18,36 +18,50 @@
   <div id="#" class="">
     <!-- header -->
     <header style="scroll-margin-top: 1em" class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[540px] w-screen">
-      <nav
-        class="w-full sm:px-10 py-6 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 md:px-20 md:flex md:justify-between md:items-center">
+      <nav style="padding-top: 10px; padding-bottom: 10px;"
+        class="w-full sm:px-10 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 md:px-20 md:flex md:justify-between md:items-center">
         <div class="flex justify-between items-center">
           <!-- <span class="text-cyan-900 font-bold text-2xl tracking-widest">Wesley Motoboy</span> -->
           <img src="./img/logo.png" alt="" class="">
 
           <span class="text-3xl text-cyan-900 cursor-pointer md:hidden block">
-            <ion-icon name="menu" onclick="handleMenuClick(this)"></ion-icon>
+            <ion-icon id="menu" name="menu" onclick="handleMenuClick(this)"></ion-icon>
           </span>
 
           <ul
-            class="w-full absolute -left-0 pl-12 bg-white md:z-auto md:w-auto md:flex md:items-center md:gap-8 md:static md:opacity-100 md:mr-8 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
-            <li class="my-6 md:my-0">
-              <a class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
-                href="#">Home</a>
-            </li>
-            <li class="my-6 md:my-0">
-              <a class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
-                href="#sobre">Sobre</a>
-            </li>
-            <li class="my-6 md:my-0">
-              <a class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-cyan-500 duration-500"
-                href="#contato">Contato</a>
-            </li>
+            class="w-full absolute left-0 pl-12 bg-white md:z-auto md:w-auto md:flex md:items-center md:gap-8 md:static md:opacity-100 md:mr-8 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
+            <a onclick="closeMenu()"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              href="#">
+              <li class="my-6 md:my-0 p-2 uppercase">
+                Home
+              </li>
+            </a>
+            <a onclick="closeMenu()"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              href="#sobre">
+              <li class="my-6 md:my-0 p-2 uppercase">
+                Sobre
+              </li>
+            </a>
+            <a onclick="closeMenu()"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              href="#contato">
+              <li class="my-6 md:my-0 p-2 uppercase">
+                Contato
+              </li>
+            </a>
           </ul>
         </div>
 
-        <div class="flex sm:my-2 md:justify-between gap-2 items-center">
-          <ion-icon class="text-3xl text-cyan-900" name="logo-whatsapp"></ion-icon>
-          <span class="text-md text-cyan-900 font-semibold">(31) 97533 0947</span>
+        <div class="flex sm:my-2 md:justify-between gap-2 sm:hidden md:flex">
+          <ion-icon class="text-4xl text-cyan-900" name="logo-whatsapp"></ion-icon>
+          <span class="text-lg text-cyan-900 font-semibold mr-4">(31) 97533 0947</span>
+          <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
+            <ion-icon class="text-4xl text-cyan-900 text-center cursor-pointer hover:text-cyan-600"
+              name="logo-instagram">
+            </ion-icon>
+          </a>
         </div>
       </nav>
 
@@ -56,7 +70,7 @@
           <h1 class="text-5xl text-slate-100 mb-12">
             Serviço de Entrega Express
           </h1>
-          <p class="text-lg text-slate-100">
+          <p class="text-xl tracking-wider text-slate-100">
             Entregas com agilidade, compromisso e garantia. 100% confiável e a melhor prestação de serviço com preços
             espetaculares.
           </p>
@@ -150,18 +164,14 @@
             <div class="flex items-center gap-4">
               <ion-icon class="text-4xl text-slate-50 text-center" name="logo-whatsapp"></ion-icon>
               <span class="text-slate-50 font-semibold tracking-wider">(31) 97533 0947</span>
-            </div>
-          </address>
 
-          <address class="mt-12">
-            <!-- <ion-icon class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-              name="logo-facebook"></ion-icon> -->
-            <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
-              <ion-icon class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-                name="logo-instagram"></ion-icon>
-            </a>
-            <!-- <ion-icon class="text-4xl text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-              name="logo-twitter"></ion-icon> -->
+              <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
+                <ion-icon
+                  class="text-4xl font-semibold text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
+                  name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+
           </address>
         </div>
       </div>
@@ -169,27 +179,9 @@
 
     <footer class="bg-teal-800 w-screen h-48"></footer>
   </div>
+  <script src="./js/app.js"></script>
   <script>
-    const motoboyImg = document.querySelector("#motoboyImg");
 
-    window.addEventListener("load", function () {
-      motoboyImg.classList.add("right-[70px]");
-      motoboyImg.classList.remove("opacity-0");
-    });
-
-    function handleMenuClick(e) {
-      let menu = document.querySelector("ul");
-
-      if (e.name === "menu") {
-        e.name = "close";
-        menu.classList.add("top-[100px]");
-        menu.classList.add("opacity-100");
-      } else {
-        e.name = "menu";
-        menu.classList.remove("top-[80px]");
-        menu.classList.remove("opacity-100");
-      }
-    }
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
