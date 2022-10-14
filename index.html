@@ -17,44 +17,45 @@
 <body>
   <div id="#" class="">
     <!-- header -->
-    <header style="scroll-margin-top: 1em" class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[540px] w-screen">
+    <header style="scroll-margin-top: 1em" class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[520px]">
+      <!-- Navigation -->
       <nav style="padding-top: 10px; padding-bottom: 10px;"
-        class="w-full sm:px-10 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 md:px-20 md:flex md:justify-between md:items-center">
+        class="w-full sm:px-10 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 lg:px-20 lg:flex lg:justify-between lg:items-center">
         <div class="flex justify-between items-center">
           <!-- <span class="text-cyan-900 font-bold text-2xl tracking-widest">Wesley Motoboy</span> -->
           <img src="./img/logo.png" alt="" class="">
 
-          <span class="text-3xl text-cyan-900 cursor-pointer md:hidden block">
+          <span class="text-3xl text-cyan-900 cursor-pointer lg:hidden block">
             <ion-icon id="menu" name="menu" onclick="handleMenuClick(this)"></ion-icon>
           </span>
 
-          <ul
-            class="w-full absolute left-0 pl-12 bg-white md:z-auto md:w-auto md:flex md:items-center md:gap-8 md:static md:opacity-100 md:mr-8 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
+          <ul class="w-full sm:absolute left-0 pl-12 bg-white opacity-0 top-[-400px] transition-all ease-in-out duration-500
+              lg:z-auto lg:w-auto lg:flex lg:items-center lg:gap-8 lg:static lg:opacity-100 lg:mr-8">
             <a onclick="closeMenu()"
-              class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
               href="#">
-              <li class="my-6 md:my-0 p-2 uppercase">
+              <li class="my-6 lg:my-0 p-2 uppercase">
                 Home
               </li>
             </a>
             <a onclick="closeMenu()"
-              class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
               href="#sobre">
-              <li class="my-6 md:my-0 p-2 uppercase">
+              <li class="my-6 lg:my-0 p-2 uppercase">
                 Sobre
               </li>
             </a>
             <a onclick="closeMenu()"
-              class="text-cyan-900 text-lg tracking-widest font-semibold hover:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:bg-cyan-700 rounded-md duration-500"
               href="#contato">
-              <li class="my-6 md:my-0 p-2 uppercase">
+              <li class="my-6 lg:my-0 p-2 uppercase">
                 Contato
               </li>
             </a>
           </ul>
         </div>
 
-        <div class="flex sm:my-2 md:justify-between gap-2 sm:hidden md:flex">
+        <div class="flex sm:my-2 lg:justify-between gap-2 sm:hidden lg:flex">
           <ion-icon class="text-4xl text-cyan-900" name="logo-whatsapp"></ion-icon>
           <span class="text-lg text-cyan-900 font-semibold mr-4">(31) 97533 0947</span>
           <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
@@ -64,6 +65,7 @@
           </a>
         </div>
       </nav>
+      <!-- End Navigation -->
 
       <div class="sm:px-12 md:px-28 mt-[80px] flex sm:flex-col sm:justify-center sm:pt-16 md:pt-24 md:flex-row">
         <div class="md:w-3/5 sm:text-center md:text-left">
@@ -89,6 +91,7 @@
       </div>
     </header>
 
+    <!-- Section aboute -->
     <section id="sobre" class="bg-white sm:px-12 md:px-28 py-8">
       <h2 class="text-center text-4xl mb-4 font-semibold text-cyan-900 tracking-widest">
         Sobre
@@ -127,7 +130,8 @@
       </div>
     </section>
 
-    <section id="contato" class="bg-gradient-to-r from-cyan-600 to-cyan-500 w-screen sm:px-12 md:px-28 py-8">
+    <!-- Section contact -->
+    <section id="contato" class="bg-gradient-to-r from-cyan-600 to-cyan-500  sm:px-12 md:px-28 py-8">
       <h2 class="text-center text-4xl mb-12 font-semibold text-slate-50 tracking-widest">
         Contato
       </h2>
@@ -177,10 +181,80 @@
       </div>
     </section>
 
-    <footer class="bg-teal-800 w-screen h-48"></footer>
+    <!-- Section Footer -->
+    <footer class="bg-teal-800 flex flex-wrap w-full min:h-48 py-8 flex-col
+              sm:px-8 md:px-28 md:flex-row">
+
+      <div class="flex w-full sm:flex-col md:flex-row md:justify-center">
+
+        <div class="bg-teal-800 flex flex-col items-center py-4 md:w-1/2">
+          <h4 class="text-2xl text-slate-50 font-semibold mb-2">LINKS</h4>
+          <div class="text-white text-center">
+            <p class="my-4"><a class="hover:md:text-slate-200 hover:md:underline sm:text-xl md:text-base"
+                href="#">INÍCIO</a></p>
+            <p class="my-4"><a class="hover:md:text-slate-200 hover:md:underline sm:text-xl md:text-base"
+                href="#sobre">SOBRE</a></p>
+            <p class="my-4"><a class="hover:md:text-slate-200 hover:md:underline sm:text-xl md:text-base"
+                href="#contato">CONTATO</a></p>
+          </div>
+        </div>
+
+        <div class="px-8 sm:mb-8 md:hidden">
+          <hr class="" />
+        </div>
+
+        <div class="bg-teal-800 sm:mt-4 flex-col items-center justify-start sm:px-8 md:w-1/2">
+          <h4 class="text-2xl sm:text-center text-slate-50 font-semibold mb-2 lg:text-start lg:ml-16">CONTATOS</h4>
+          <!-- <p class="my-4"> -->
+          <div class="text-white text-xl gap-4 mt-4 flex items-center
+              sm:text-center sm:justify-center 
+              md:text-start md:justify-start">
+            <ion-icon class="text-3xl text-slate-50 text-center" name="logo-whatsapp"></ion-icon>
+            <span class="text-slate-50  tracking-wider">(31) 97533 0947</span>
+          </div>
+
+          <div class="flex sm:justify-center md:justify-start mt-8">
+            <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
+              <ion-icon
+                class="text-3xl font-semibold text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
+                name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <!-- </p> -->
+        </div>
+
+      </div>
+    </footer>
   </div>
   <script src="./js/app.js"></script>
   <script>
+    const motoboyImg = document.querySelector('#motoboyImg');
+
+    window.addEventListener('load', function () {
+      motoboyImg.classList.add('right-[70px]');
+      motoboyImg.classList.remove('opacity-0');
+    });
+
+    function handleMenuClick(e) {
+      let menu = document.querySelector('ul');
+
+      if (e.name === 'menu') {
+        e.name = 'close';
+        menu.classList.add('top-[100px]');
+        menu.classList.add('opacity-100');
+      } else {
+        e.name = 'menu';
+        menu.classList.remove('top-[80px]');
+        menu.classList.remove('opacity-100');
+      }
+    }
+
+    function closeMenu() {
+      let menu = document.querySelector('ul');
+      menu.classList.remove('top-[80px]');
+      menu.classList.remove('opacity-100');
+      document.querySelector('#menu').name = 'menu';
+    }
 
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
