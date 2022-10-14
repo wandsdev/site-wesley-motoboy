@@ -17,7 +17,7 @@
 <body>
   <div id="#" class="">
     <!-- header -->
-    <header style="scroll-margin-top: 1em" class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[520px]">
+    <header style="scroll-margin-top: 1em" class="bg-gradient-to-r from-cyan-600 to-cyan-500 min-h-[520px] w-screen">
       <!-- Navigation -->
       <nav style="padding-top: 10px; padding-bottom: 10px;"
         class="w-full sm:px-10 bg-white shadow-md border-b-cyan-600 fixed top-0 z-10 lg:px-20 lg:flex lg:justify-between lg:items-center">
@@ -32,21 +32,21 @@
           <ul class="w-full sm:absolute left-0 pl-12 bg-white opacity-0 top-[-400px] transition-all ease-in-out duration-500
               lg:z-auto lg:w-auto lg:flex lg:items-center lg:gap-8 lg:static lg:opacity-100 lg:mr-8">
             <a onclick="closeMenu()"
-              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-300"
               href="#">
               <li class="my-6 lg:my-0 p-2 uppercase">
-                Home
+                INÍCIO
               </li>
             </a>
             <a onclick="closeMenu()"
-              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-500"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:md:bg-cyan-700 rounded-md duration-300"
               href="#sobre">
               <li class="my-6 lg:my-0 p-2 uppercase">
                 Sobre
               </li>
             </a>
             <a onclick="closeMenu()"
-              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:bg-cyan-700 rounded-md duration-500"
+              class="text-cyan-900 text-lg tracking-widest font-semibold hover:lg:text-slate-50 hover:bg-cyan-700 rounded-md duration-300"
               href="#contato">
               <li class="my-6 lg:my-0 p-2 uppercase">
                 Contato
@@ -55,19 +55,24 @@
           </ul>
         </div>
 
-        <div class="flex sm:my-2 lg:justify-between gap-2 sm:hidden lg:flex">
-          <ion-icon class="text-4xl text-cyan-900" name="logo-whatsapp"></ion-icon>
-          <span class="text-lg text-cyan-900 font-semibold mr-4">(31) 97533 0947</span>
+        <div class="flex flex-col sm:my-2 lg:justify-between gap-2 sm:hidden lg:flex">
+          <div class="flex gap-2 items-center">
+            <ion-icon class="text-2xl text-cyan-900" name="logo-whatsapp"></ion-icon>
+            <span class="text-lg text-cyan-900 font-semibold mr-4">(31) 97533 0947</span>
+          </div>
           <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
-            <ion-icon class="text-4xl text-cyan-900 text-center cursor-pointer hover:text-cyan-600"
-              name="logo-instagram">
-            </ion-icon>
+            <div class="flex gap-2 items-center group">
+              <ion-icon class="text-2xl text-cyan-900 group-hover:text-cyan-600" name="logo-instagram"></ion-icon>
+              <span class="text-lg text-cyan-900 font-semibold mr-4 group-hover:text-cyan-600">Instagram</span>
+            </div>
           </a>
         </div>
+
       </nav>
       <!-- End Navigation -->
 
-      <div class="sm:px-12 md:px-28 mt-[80px] flex sm:flex-col sm:justify-center sm:pt-16 md:pt-24 md:flex-row">
+      <div
+        class="sm:px-12 md:px-28 mt-[80px] flex sm:flex-col sm:justify-center sm:pt-16 md:pt-24 md:flex-row w-screen">
         <div class="md:w-3/5 sm:text-center md:text-left">
           <h1 class="text-5xl text-slate-100 mb-12">
             Serviço de Entrega Express
@@ -83,6 +88,7 @@
             </button>
           </a>
         </div>
+
         <div class="md:w-2/5 flex justify-center items-center">
           <img id="motoboyImg" width="30%"
             class="sm:hidden md:block md:absolute right-[-600px] opacity-0 transition-all ease-in duration-500"
@@ -92,7 +98,7 @@
     </header>
 
     <!-- Section aboute -->
-    <section id="sobre" class="bg-white sm:px-12 md:px-28 py-8">
+    <section id="sobre" class="bg-white sm:px-12 md:px-28 py-8 w-screen">
       <h2 class="text-center text-4xl mb-4 font-semibold text-cyan-900 tracking-widest">
         Sobre
       </h2>
@@ -131,20 +137,21 @@
     </section>
 
     <!-- Section contact -->
-    <section id="contato" class="bg-gradient-to-r from-cyan-600 to-cyan-500  sm:px-12 md:px-28 py-8">
+    <section id="contato" class="bg-gradient-to-r from-cyan-600 to-cyan-500  sm:px-12 md:px-28 py-8 w-screen">
       <h2 class="text-center text-4xl mb-12 font-semibold text-slate-50 tracking-widest">
         Contato
       </h2>
       <div class="sm:flex-col lg:flex lg:flex-row gap-12">
-        <form action="/" method="get" class="lg:w-1/2">
+        <form action="https://formsubmit.co/f2147edd0cdc8026b92396ec637c0657" method="POST" enctype="text/plain"
+          class="lg:w-1/2">
           <label for="name" class="block text-slate-50 text-xl mb-1">Nome</label>
-          <input type="text" name="name" id="name" class="w-full h-10 rounded-md px-4 outline-none mb-4" />
+          <input type="text" name="name" id="name" required class="w-full h-10 rounded-md px-4 outline-none mb-4" />
 
           <label for="email" class="block text-slate-50 text-xl mb-1">Email</label>
-          <input type="text" email="name" id="email" class="w-full h-10 rounded-md px-4 outline-none mb-4" />
+          <input type="email" name="email" id="email" required class="w-full h-10 rounded-md px-4 outline-none mb-4" />
 
-          <label for="msg" class="block text-slate-50 text-xl mb-1">Nome</label>
-          <textarea rows="6" name="name" id="name" class="w-full rounded-md p-4 outline-none mb-4"></textarea>
+          <label for="msg" class="block text-slate-50 text-xl mb-1">Mensagem</label>
+          <textarea rows="6" name="msg" id="msg" required class="w-full rounded-md p-4 outline-none mb-4"></textarea>
 
           <button type="submit"
             class="p-4 bg-slate-100 text-cyan-900 text-xl border-2 border-slate-400 font-medium rounded-md w-full mt-4 hover:bg-slate-200">
@@ -157,24 +164,28 @@
         <div class="lg:w-1/2 p-6">
           <address class="flex-col">
             <div class="flex items-center gap-4 mb-6">
-              <ion-icon class="text-4xl text-slate-50 text-center" name="location"></ion-icon>
+              <ion-icon class="text-4xl text-slate-50 text-center" name="location-outline"></ion-icon>
               <span class="text-slate-50 font-semibold tracking-wider">Rua Padre Miguel 589, bairro Anchieta, Belo
                 Horizonte</span>
             </div>
             <div class="flex items-center gap-4 mb-6">
-              <ion-icon class="text-4xl text-slate-50 text-center" name="mail"></ion-icon>
+              <ion-icon class="text-4xl text-slate-50 text-center" name="mail-outline"></ion-icon>
               <span class="text-slate-50 font-semibold tracking-wider">wesleyxaviermotoboy@gmail.com</span>
             </div>
-            <div class="flex items-center gap-4">
+
+            <div class="flex items-center gap-4 mb-6">
               <ion-icon class="text-4xl text-slate-50 text-center" name="logo-whatsapp"></ion-icon>
               <span class="text-slate-50 font-semibold tracking-wider">(31) 97533 0947</span>
-
-              <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
-                <ion-icon
-                  class="text-4xl font-semibold text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-                  name="logo-instagram"></ion-icon>
-              </a>
             </div>
+
+            <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
+              <div class="flex items-center gap-4 &:firs group">
+                <ion-icon class="text-4xl text-slate-50 text-center group-hover:text-slate-200" name="logo-instagram">
+                </ion-icon>
+                <span
+                  class="text-slate-50 font-semibold tracking-wider group-hover:text-slate-200">www.instagram.com/wesley_xavier_motoboy/</span>
+              </div>
+            </a>
 
           </address>
         </div>
@@ -182,8 +193,7 @@
     </section>
 
     <!-- Section Footer -->
-    <footer class="bg-teal-800 flex flex-wrap w-full min:h-48 pt-8 flex-col
-              ">
+    <footer class="bg-teal-800 flex flex-wrap min:h-48 pt-8 flex-col w-screen">
 
       <div class="flex w-full sm:flex-col md:flex-row md:justify-center sm:px-8 md:px-28">
 
@@ -203,23 +213,33 @@
           <hr class="" />
         </div>
 
-        <div class="bg-teal-800 sm:mt-4 flex-col items-center justify-start sm:px-8 md:w-1/2">
-          <h4 class="text-2xl sm:text-center text-slate-50 font-semibold mb-2 lg:text-start lg:ml-16">CONTATOS</h4>
+        <div class="bg-teal-800 sm:mt-4 flex-col items-center justify-start sm:px-8 md:w-1/2 sm:mb-8">
+          <h4 class="text-2xl sm:text-center text-slate-50 font-semibold mb-2 lg:text-start">CONTATOS</h4>
           <!-- <p class="my-4"> -->
           <div class="text-white text-xl gap-4 mt-4 flex items-center
               sm:text-center sm:justify-center 
               md:text-start md:justify-start">
-            <ion-icon class="text-3xl text-slate-50 text-center" name="logo-whatsapp"></ion-icon>
-            <span class="text-slate-50  tracking-wider">(31) 97533 0947</span>
+            <ion-icon class="text-xl text-slate-50 text-center" name="logo-whatsapp"></ion-icon>
+            <span class="text-slate-50 text-lg  tracking-wider">(31) 97533 0947</span>
           </div>
 
-          <div class="flex sm:justify-center md:justify-start mt-8">
-            <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
-              <ion-icon
-                class="text-3xl font-semibold text-slate-50 text-center mr-4 cursor-pointer hover:text-slate-200"
-                name="logo-instagram"></ion-icon>
-            </a>
+          <div class="text-white text-xl gap-4 mt-4 flex items-center
+              sm:text-center sm:justify-center 
+              md:text-start md:justify-start">
+            <ion-icon class="text-xl text-slate-50 text-center" name="mail-outline"></ion-icon>
+            <span class="text-slate-50 text-lg  tracking-wider">wesleyxaviermotoboy@gmail.com</span>
           </div>
+
+          <a target="_blank" href="https://www.instagram.com/wesley_xavier_motoboy/">
+            <div class="text-white text-xl gap-4 mt-4 flex items-center cursor-pointer hover:text-slate-300
+                sm:text-center sm:justify-center 
+                md:text-start md:justify-start">
+
+              <ion-icon class="text-xl text-slate-50 text-center hover:text-slate-300" name="logo-instagram"></ion-icon>
+              <span
+                class="text-slate-50 text-lg  tracking-wider hover:text-slate-300">www.instagram.com/wesley_xavier_motoboy/</span>
+            </div>
+          </a>
           <!-- </p> -->
         </div>
 
