@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto';
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
